@@ -1,12 +1,12 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-public class stable {//rename
+public class Project1 {//rename
 
 	public static void main(String[] args) throws IOException { 
 		
 		//Initialize scanner & file.
-		Scanner file = new Scanner(new File("input.txt"));
+		Scanner file = new Scanner(new File("input1.txt"));
 		
 		//Pull first number in the file.
 		int numPersons = file.nextInt();
@@ -14,7 +14,7 @@ public class stable {//rename
 		//VisualDebug
 		System.out.println("There are " + numPersons +" men and " + numPersons + " women.");
 		
-		//Initialize preference lists, preprocessed lists and given matching.
+		//Initialize preference lists,  processed lists and given matching.
 		int[][] mensPreference = new int[numPersons][numPersons];
 		int[][] mensProcessedList = new int[numPersons][numPersons];
 		int[][] womensPreference = new int[numPersons][numPersons];
